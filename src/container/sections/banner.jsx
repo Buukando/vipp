@@ -75,12 +75,16 @@ const Details = () => {
   `;
 
   const title = {
-    color: "white",
-    "font-size": "2rem",
+    'color': 'white',
+    'font-size': '2.7rem',
+    'font-weight': '500'
+
   };
 
   const subtitle = {
-    color: "white",
+    'color': 'white',
+    'font-size': '.9rem',
+    'margin-top': '1rem'
   };
 
   return (

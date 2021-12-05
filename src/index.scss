@@ -8,4 +8,10 @@
     outline: none;
 
     flex-wrap: wrap;
+    font-family: 'Vipp Nue', sans-serif;
+}
+
+@font-face {
+    font-family: 'Vipp Nue';
+    src: url('./font/vipp.ttf') format("ttf");
 }
