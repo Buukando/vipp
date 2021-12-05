@@ -1,9 +1,12 @@
 import styled from "styled-components";
 
-import NavBar from "../../components/bars/Navbar";
 
 import Background from "../../assets/img/section-one/bed.png";
 import ArrowDown from '../../assets/svg/arrow-down.svg';
+
+import NavBar from "../../components/bars/Navbar";
+
+
 
 const Container = styled.div`
   width: 100%;

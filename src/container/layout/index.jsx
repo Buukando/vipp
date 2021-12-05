@@ -1,4 +1,4 @@
-import Banner from '../sections/banner';
+import Banner from '../sections/Banner';
 
 export default function(props) {
     return(
