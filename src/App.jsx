@@ -1,9 +1,10 @@
 import './App.scss';
+import Layout from './container/layout/index';
 
 function App() {
   return (
     <div className="App">
-      <button className="btn btn-success">Este</button>
+      <Layout></Layout>
     </div>
   );
 }
