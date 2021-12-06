@@ -106,7 +106,7 @@ const Details = function() {
   );
 };
 
-export default function (props) {
+export default function Banner(props) {
   return (
     <Container>
       <div className="wrapper">
