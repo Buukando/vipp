@@ -27,7 +27,7 @@ const NavContainer = styled.div`
   }
 `;
 
-export default function(props) {
+export default function Navbar(props) {
   <NavContainer>
     <header>
       <span className="logo">
