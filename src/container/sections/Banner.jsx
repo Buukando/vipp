@@ -28,7 +28,7 @@ const Container = styled.div`
   }
 `;
 
-const Scroll = () => {
+const Scroll = function() {
   const Container = styled.div`
     width: auto;
     height: auto;
@@ -51,7 +51,7 @@ const Scroll = () => {
       align-items: center;
       gap: 1rem;
       transform: rotate(90deg);
-      
+
     }
 
     
@@ -72,7 +72,7 @@ const Scroll = () => {
 };
 
 
-const Details = () => {
+const Details = function() {
   const Container = styled.div`
     margin: auto;
     text-align: center;
