@@ -51,6 +51,7 @@ const Scroll = () => {
       align-items: center;
       gap: 1rem;
       transform: rotate(90deg);
+      
     }
 
     
