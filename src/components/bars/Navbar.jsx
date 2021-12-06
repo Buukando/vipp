@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-import Logo from '../../assets/svg/logo.svg';
+import Logo from "../../assets/svg/logo.svg";
 
 const NavContainer = styled.div`
   width: 100%;
@@ -14,28 +14,30 @@ const NavContainer = styled.div`
   }
 
   .logo img {
-      width: auto;
-      height: 100%;
+    width: auto;
+    height: 100%;
   }
 
   .btn-reservation {
-      padding: .5rem 1rem;
-      border-radius: .8rem;
-      border: none;
-      background: #3c6961;
-      color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.8rem;
+    border: none;
+    background: #3c6961;
+    color: white;
   }
 `;
 
 export default function Navbar(props) {
-  <NavContainer>
-    <header>
-      <span className="logo">
-        <img src={Logo} alt="" />
-      </span>
-      <div className="container_recomendation">
-        <button className="btn-reservation">Make a reservation</button>
-      </div>
-    </header>
-  </NavContainer>
-};
+  return (
+    <NavContainer>
+      <header>
+        <span className="logo">
+          <img src={Logo} alt="" />
+        </span>
+        <div className="container_recomendation">
+          <button className="btn-reservation">Make a reservation</button>
+        </div>
+      </header>
+    </NavContainer>
+  );
+}
