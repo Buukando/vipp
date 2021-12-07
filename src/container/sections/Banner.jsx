@@ -6,28 +6,6 @@ import ArrowDown from '../../assets/svg/arrow-down.svg';
 
 import NavBar from "../../components/bars/Navbar";
 
-
-
-const Container = styled.div`
-  width: 100%;
-  height: 100vh;
-  display: flex;
-
-  .wrapper {
-    height: 100%;
-    flex: 1;
-    padding: 0 2rem;
-    background: url(${Background}) no-repeat;
-    background-size: cover;
-  }
-
-  .container {
-    height: inherit;
-    position: relative;
-    display: flex;
-  }
-`;
-
 const Scroll = function() {
   const Container = styled.div`
     width: auto;
@@ -42,7 +20,7 @@ const Scroll = function() {
     margin-right: -1.5rem;
     
     
-    button {
+    a {
       color: white;
       font-size: 1rem;
       background: transparent;
@@ -55,7 +33,7 @@ const Scroll = function() {
     }
 
     
-    button::after {
+    a::after {
       content: url(${ArrowDown});
       transform: rotate(-90deg);
       width: auto;
@@ -64,9 +42,9 @@ const Scroll = function() {
   `;
   return (
     <Container>
-      <button>
+      <a href="#about">
         <p>Scroll</p>
-      </button>
+      </a>
     </Container>
   );
 };
@@ -107,6 +85,25 @@ const Details = function() {
 };
 
 export default function Banner(props) {
+  const Container = styled.div`
+  width: 100%;
+  height: 100vh;
+  display: flex;
+
+  .wrapper {
+    height: 100%;
+    flex: 1;
+    padding: 0 2rem;
+    background: url(${Background}) no-repeat;
+    background-size: cover;
+  }
+
+  .container {
+    height: inherit;
+    position: relative;
+    display: flex;
+  }
+`;
   return (
     <Container>
       <div className="wrapper">
