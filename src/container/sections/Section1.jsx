@@ -1,10 +1,13 @@
+// Libs
 import styled from "styled-components";
 
+// Components
+import NavBar from "../../components/bars/Navbar";
 
+// Assets
 import Background from "../../assets/img/section-one/bed1.png";
 import ArrowDown from '../../assets/svg/arrow-down.svg';
 
-import NavBar from "../../components/bars/Navbar";
 
 const Scroll = function() {
   const Container = styled.div`
