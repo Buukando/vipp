@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 
-import Background from "../../assets/img/section-one/bed.png";
+import Background from "../../assets/img/section-one/bed1.png";
 import ArrowDown from '../../assets/svg/arrow-down.svg';
 
 import NavBar from "../../components/bars/Navbar";
