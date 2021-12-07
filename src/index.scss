@@ -9,6 +9,11 @@
 
     flex-wrap: wrap;
     font-family: 'Vipp Nue', sans-serif;
+    text-decoration: none;
+}
+
+html, body {
+    scroll-behavior: smooth;
 }
 
 @font-face {
