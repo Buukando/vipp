@@ -17,13 +17,13 @@ export default function PriceCards(props) {
     height: 100%;
     background-color: ${bgColor};
     color: ${color};
+    padding: 5rem 1rem;
 
     .content {
       height: 100%;
       display: flex;
       flex-direction: column;
       gap: 3rem;
-      padding: 2rem 1rem;
     }
 
     header {
@@ -48,6 +48,8 @@ export default function PriceCards(props) {
       width: 100%;
       height: 100%;
       background: url(${image}) no-repeat center center;
+      background-size: cover;
+      object-fit: cover;
     }
 
     footer {
@@ -61,6 +63,7 @@ export default function PriceCards(props) {
       flex-direction: column;
       align-items: center;
       text-align: center;
+      gap: 1rem;
     }
   `;
 
@@ -73,7 +76,6 @@ export default function PriceCards(props) {
         </header>
         <main>
           <div className="image-container">
-            {/* <img src={image} alt="" /> */}
           </div>
         </main>
         <footer>

@@ -3,20 +3,25 @@ import styled from "styled-components";
 
 // Components
 import PriceCards from "../../components/cards/PriceCards";
+import Palette from "../../palette/palette";
 
 // Assets
 import Loft from "../../assets/img/Section6/loft.jpg";
+import Shelter from "../../assets/img/Section6/shelter2.png";
 
 // Code
+
+const colours = Palette();
+
 export default function Section6(props) {
-  const { first } = {
-    first: {
-      padding: "",
-      text: "example",
-      color: "",
-      fontSize: "",
-      bgColor: "",
-    },
+  const { backgrounds } = colours;
+
+  const btnConfig = {
+    padding: ".6rem 1rem",
+    text: "View Room",
+    color: backgrounds.white,
+    fontSize: ".9rem",
+    bgColor: backgrounds.secondaryColor,
   };
 
   const { card1, card2, card3 } = {
@@ -35,9 +40,9 @@ export default function Section6(props) {
       price: "$ 1.000/night",
       description:
         "Perched atop the old printing factory from 1910 \n in Copenhogen's islands Brygge area.",
-      image: Loft,
+      image: Shelter,
       bgColor: "#1d1d1d",
-      color: 'white'
+      color: "white",
     },
     card3: {
       location: "COPENHAGEN, DEMARK",
@@ -65,15 +70,15 @@ export default function Section6(props) {
       <div className="wrapper">
         <PriceCards
           contentForCard={card1}
-          configsForButtons={first}
+          configsForButtons={btnConfig}
         ></PriceCards>
         <PriceCards
           contentForCard={card2}
-          configsForButtons={first}
+          configsForButtons={btnConfig}
         ></PriceCards>
         <PriceCards
           contentForCard={card3}
-          configsForButtons={first}
+          configsForButtons={btnConfig}
         ></PriceCards>
       </div>
     </Container>
