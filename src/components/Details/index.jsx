@@ -34,11 +34,6 @@ export default function Details(props) {
     }
   `;
 
-  function warn(e) {
-    e.preventDefault();
-    alert("This functionality is not ready yet.");
-  }
-
   return (
     <Container>
       <div className="container-details">
