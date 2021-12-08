@@ -1,9 +1,16 @@
 import styled from "styled-components";
 
-export default function Details(props) {
-  const { palette, titleSize, showReadMore} = props;
+import MainButton from "../buttons/MainButton";
 
-  const {backgrounds} = palette;
+export default function Details(props) {
+
+  const { titleSize, showReadMore, configForButtons } = props;
+
+  const { first, second } = configForButtons;
+
+  
+  console.log(first)
+  console.log(second)
 
   const Container = styled.div`
     .container-details {
@@ -25,22 +32,7 @@ export default function Details(props) {
     button {
       border: none;
     }
-
-    .btn-bock {
-      padding: 0.8rem 1.5rem;
-      background: ${backgrounds.secondaryColor};
-      color: white;
-      border-radius: 1rem;
-    }
-    .btn-read {
-      background: transparent;
-    }
   `;
-
-  function warn(e) {
-    e.preventDefault();
-    alert("This functionality is not ready yet.");
-  }
 
   return (
     <Container>
@@ -63,16 +55,8 @@ export default function Details(props) {
           </span>
         </div>
         <div className="btn-container">
-          <button className="btn-bock" onClick={warn}>
-            Bock a Room
-          </button>
-          {
-              (showReadMore) ? (
-                <button className="btn-read" onClick={warn}>
-                Read more
-              </button>
-              ): ('')
-          }
+          <MainButton configs={first}></MainButton>
+          {(showReadMore) ? (<MainButton configs={second}></MainButton>) : null}
         </div>
       </div>
     </Container>
