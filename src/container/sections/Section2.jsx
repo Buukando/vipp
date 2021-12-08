@@ -24,7 +24,7 @@ const AboutImageContainer = () => {
   );
 };
 
-export default function AboutSection(props) {
+export default function Section2(props) {
   const buttonsConfigurations = {
       first: {
         text: "Book a Room",

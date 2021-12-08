@@ -87,7 +87,7 @@ const Details = function() {
   );
 };
 
-export default function Banner(props) {
+export default function Section1(props) {
   const Container = styled.div`
   width: 100%;
   height: 100vh;
