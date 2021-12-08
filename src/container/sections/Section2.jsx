@@ -3,7 +3,7 @@ import styled from "styled-components";
 import Details from "../../components/Details/index";
 import Palette from "../../palette/palette";
 
-import AboutImage from "../../assets/img/section-two/about.jpg";
+import AboutImage from "../../assets/img/Section2/about.jpg";
 
 const colours = Palette();
 

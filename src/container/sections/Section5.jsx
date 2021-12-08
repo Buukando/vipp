@@ -5,7 +5,7 @@ import styled from "styled-components";
 import MainButton from '../../components/buttons/MainButton';
 
 // Assets
-import Background from '../../assets/img/section-four/four.jpg'
+import Background from '../../assets/img/Section4/four.jpg'
 
 
 export default function Section5() {
@@ -22,11 +22,11 @@ export default function Section5() {
     justify-content: center;
   `;
   const btnConfigs = {
-    padding: '.8rem 1.2rem',
-    color: 'white',
-    bgColor: 'red',
-    text: 'teste',
-    fontSize: '.5rem'
+    padding: '.7rem 1.5rem',
+    color: 'black',
+    bgColor: 'white',
+    text: 'Look inside Vipp Shelter',
+    fontSize: '1rem'
   }
   return (
     <Container>

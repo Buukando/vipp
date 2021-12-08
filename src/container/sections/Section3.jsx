@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import VideoBackground from '../../assets/img/section-three/video.jpg'
+import VideoBackground from '../../assets/img/Section3/video.jpg'
 
 export default function Video(props) {
 
