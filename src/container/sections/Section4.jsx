@@ -10,7 +10,7 @@ import Details from "../../components/Details/index";
 import Palette from "../../palette/palette";
 
 // Images
-import FourImage from '../../assets/img/section-four/four.jpg';
+import FourImage from '../../assets/img/Section4/four.jpg';
 const colours = Palette();
 
 
