@@ -126,7 +126,7 @@ function Taber() {
   );
 }
 
-export default function SectionFour() {
+export default function Section4() {
   const Container = styled.section`
     width: 100%;
     height: 100vh;

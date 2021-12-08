@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import VideoBackground from '../../assets/img/Section3/video.jpg'
 
-export default function Video(props) {
+export default function Section3(props) {
 
     const Container = styled.section`
     height: 90vh;
