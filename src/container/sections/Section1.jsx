@@ -1,10 +1,13 @@
+// Libs
 import styled from "styled-components";
 
+// Components
+import NavBar from "../../components/bars/Navbar";
 
-import Background from "../../assets/img/section-one/bed1.png";
+// Assets
+import Background from "../../assets/img/Section1/bed1.png";
 import ArrowDown from '../../assets/svg/arrow-down.svg';
 
-import NavBar from "../../components/bars/Navbar";
 
 const Scroll = function() {
   const Container = styled.div`
@@ -84,7 +87,7 @@ const Details = function() {
   );
 };
 
-export default function Banner(props) {
+export default function Section1(props) {
   const Container = styled.div`
   width: 100%;
   height: 100vh;

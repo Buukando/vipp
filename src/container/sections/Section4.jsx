@@ -10,18 +10,51 @@ import Details from "../../components/Details/index";
 import Palette from "../../palette/palette";
 
 // Images
-import FourImage from '../../assets/img/section-four/four.jpg';
+import FourImage from '../../assets/img/Section4/four.jpg';
 const colours = Palette();
+
+
+const buttonsConfigurations = {
+  first: {
+    text: "Book a Room",
+    padding: ".8rem 1.5rem",
+    color: "white",
+    bgColor: colours.backgrounds.secondaryColor,
+    fontSize: ".8rem",
+  },
+  second: {
+    text: "Read more",
+    padding: ".8rem 1.5rem",
+    color: "black",
+    bgColor: "transparent",
+    fontSize: ".8rem",
+  },
+};
 
 function* generateDetails(colours, size, toShow) {
   yield (
-    <Details palette={colours} titleSize={size} showReadMore={toShow}></Details>
+    <Details 
+    palette={colours} 
+    titleSize={size} 
+    showReadMore={toShow} 
+    configForButtons={buttonsConfigurations}
+    ></Details>
   );
   yield (
-    <Details palette={colours} titleSize={size} showReadMore={toShow}></Details>
+    <Details 
+    palette={colours} 
+    titleSize={size} 
+    showReadMore={toShow} 
+    configForButtons={buttonsConfigurations}
+    ></Details>
   );
   yield (
-    <Details palette={colours} titleSize={size} showReadMore={toShow}></Details>
+    <Details 
+    palette={colours} 
+    titleSize={size} 
+    showReadMore={toShow} 
+    configForButtons={buttonsConfigurations}
+    ></Details>
   );
 }
 
@@ -93,7 +126,7 @@ function Taber() {
   );
 }
 
-export default function SectionFour() {
+export default function Section4() {
   const Container = styled.section`
     width: 100%;
     height: 100vh;
@@ -112,8 +145,14 @@ export default function SectionFour() {
     .image-container {
         width: 50%;
         height: 100%;
-        background: url(${FourImage}) no-repeat;
+        background-size: contain;
         justify-self: center;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
     }
   `;
   return (
@@ -121,7 +160,9 @@ export default function SectionFour() {
       <div className="details">
         <Taber></Taber>
       </div>
-      <div className="image-container"></div>
+      <div className="image-container">
+          <img src={FourImage} alt="" />
+      </div>
     </Container>
   );
 }

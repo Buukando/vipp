@@ -1,10 +1,10 @@
 import styled from 'styled-components';
-import VideoBackground from '../../assets/img/section-three/video.jpg'
+import VideoBackground from '../../assets/img/Section3/video.jpg'
 
-export default function Video(props) {
+export default function Section3(props) {
 
     const Container = styled.section`
-    height: 80vh;
+    height: 90vh;
     width: 100%;
     background: url(${VideoBackground}) no-repeat center center;
     background-size: cover;
