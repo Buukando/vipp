@@ -92,7 +92,31 @@ function a11yProps(index) {
 }
 
 function Taber() {
-  const Container = styled.div``;
+  const Container = styled.div`
+
+  .MuiBox-root {
+
+    display: inline-block;
+    border: none;
+  }
+  .MuiTabs-root {
+  }
+
+  .MuiTabs-scroller {
+    text-transform: capitalize;
+  }
+  
+  .MuiTabs-indicator {
+    background: #47645F;
+  }
+
+  .MuiButtonBase-root {
+    text-transform: none;
+    color: #47645F;
+  }
+  `;
+
+
 
   const [value, setValue] = React.useState(0);
 
@@ -161,7 +185,7 @@ export default function Section4() {
         <Taber></Taber>
       </div>
       <div className="image-container">
-          <img src={FourImage} alt="" />
+          <img src={FourImage} alt="just"/>
       </div>
     </Container>
   );
