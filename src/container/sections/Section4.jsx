@@ -5,14 +5,22 @@ import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
+import { createTheme, ThemeProvider } from "@mui/material/styles";
 
 import Details from "../../components/Details/index";
 import Palette from "../../palette/palette";
 
 // Images
-import FourImage from '../../assets/img/Section4/four.jpg';
+import FourImage from "../../assets/img/Section4/four.jpg";
 const colours = Palette();
 
+const theme = createTheme({
+  props: {
+    MuiButtonBase: {
+      disableRipple: true,
+    },
+  },
+});
 
 const buttonsConfigurations = {
   first: {
@@ -33,27 +41,27 @@ const buttonsConfigurations = {
 
 function* generateDetails(colours, size, toShow) {
   yield (
-    <Details 
-    palette={colours} 
-    titleSize={size} 
-    showReadMore={toShow} 
-    configForButtons={buttonsConfigurations}
+    <Details
+      palette={colours}
+      titleSize={size}
+      showReadMore={toShow}
+      configForButtons={buttonsConfigurations}
     ></Details>
   );
   yield (
-    <Details 
-    palette={colours} 
-    titleSize={size} 
-    showReadMore={toShow} 
-    configForButtons={buttonsConfigurations}
+    <Details
+      palette={colours}
+      titleSize={size}
+      showReadMore={toShow}
+      configForButtons={buttonsConfigurations}
     ></Details>
   );
   yield (
-    <Details 
-    palette={colours} 
-    titleSize={size} 
-    showReadMore={toShow} 
-    configForButtons={buttonsConfigurations}
+    <Details
+      palette={colours}
+      titleSize={size}
+      showReadMore={toShow}
+      configForButtons={buttonsConfigurations}
     ></Details>
   );
 }
@@ -93,30 +101,24 @@ function a11yProps(index) {
 
 function Taber() {
   const Container = styled.div`
+    .MuiBox-root {
+      display: inline-block;
+      border: none;
+    }
 
-  .MuiBox-root {
+    .MuiTabs-scroller {
+      text-transform: capitalize;
+    }
 
-    display: inline-block;
-    border: none;
-  }
-  .MuiTabs-root {
-  }
+    .MuiTabs-indicator {
+      background: #47645f;
+    }
 
-  .MuiTabs-scroller {
-    text-transform: capitalize;
-  }
-  
-  .MuiTabs-indicator {
-    background: #47645F;
-  }
-
-  .MuiButtonBase-root {
-    text-transform: none;
-    color: #47645F;
-  }
+    .MuiButtonBase-root {
+      color: #47645f !important;
+      text-transform: none;
+    }
   `;
-
-
 
   const [value, setValue] = React.useState(0);
 
@@ -127,15 +129,17 @@ function Taber() {
   return (
     <Container>
       <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
-        <Tabs
-          value={value}
-          onChange={handleChange}
-          aria-label="basic tabs example"
-        >
-          <Tab label="Vipp Chimney" {...a11yProps(0)} />
-          <Tab label="Vipp Shelter" {...a11yProps(1)} />
-          <Tab label="Vipp Loft" {...a11yProps(2)} />
-        </Tabs>
+        <ThemeProvider theme={theme}>
+          <Tabs
+            value={value}
+            onChange={handleChange}
+            aria-label="basic tabs example"
+          >
+            <Tab label="Vipp Chimney" {...a11yProps(0)} />
+            <Tab label="Vipp Shelter" {...a11yProps(1)} />
+            <Tab label="Vipp Loft" {...a11yProps(2)} />
+          </Tabs>
+        </ThemeProvider>
       </Box>
       <TabPanel value={value} index={0}>
         {generateDetails(colours, "3rem", false).next().value}
@@ -159,24 +163,24 @@ export default function Section4() {
     justify-content: space-between;
 
     .details {
-        width: 50%;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+      width: 50%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
 
     .image-container {
-        width: 50%;
-        height: 100%;
-        background-size: contain;
-        justify-self: center;
+      width: 50%;
+      height: 100%;
+      background-size: contain;
+      justify-self: center;
 
-        img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
     }
   `;
   return (
@@ -185,7 +189,7 @@ export default function Section4() {
         <Taber></Taber>
       </div>
       <div className="image-container">
-          <img src={FourImage} alt="just"/>
+        <img src={FourImage} alt="just" />
       </div>
     </Container>
   );
