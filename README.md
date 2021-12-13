@@ -1,3 +1,3 @@
 # This is Vipp Project
 
-![Vipp](../vipp/other/projet.png)
+![Vipp](./other/projet.png)
