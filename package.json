@@ -28,7 +28,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "clean": "rm -rf ./node_modules && rm -rf package-lock.json && rm -rf yarn.lock"
+    "clean": "rm -rf ./node_modules && rm -rf package-lock.json && rm -rf yarn.lock",
+    "set": "npm install && yarn install"
   },
   "eslintConfig": {
     "extends": [
