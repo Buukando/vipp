@@ -7,13 +7,14 @@
     list-style-type: none;
     outline: none;
 
-    flex-wrap: wrap;
     font-family: 'Vipp Nue', sans-serif;
     text-decoration: none;
+    // font-size: 62.5%;
 }
 
 html, body {
     scroll-behavior: smooth;
+    width: 100%;
 }
 
 @font-face {
