@@ -185,7 +185,7 @@ export default function Section4() {
         <Taber></Taber>
       </div>
       <div className="image-container">
-          <img src={FourImage} alt="" />
+          <img src={FourImage} alt="just"/>
       </div>
     </Container>
   );

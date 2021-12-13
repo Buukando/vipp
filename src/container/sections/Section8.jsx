@@ -59,7 +59,7 @@ export default function Section8(props) {
             <span>Instagrams</span>
           </div>
           <div className="go-instagram">
-            <a href="#">
+            <a href="#/">
               Go to account <i class="fas fa-arrow-right"></i>
             </a>
           </div>
