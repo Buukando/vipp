@@ -1,28 +1,29 @@
 // Libs
 import styled from "styled-components";
+import OwlCarousel from "react-owl-carousel";
+import "../../../node_modules/owl.carousel/dist/assets/owl.carousel.css";
+import "../../../node_modules/owl.carousel/dist/assets/owl.theme.default.min.css";
 
 // Components
 import NavBar from "../../components/bars/Navbar";
 
 // Assets
 import Background from "../../assets/img/Section1/bed1.png";
-import ArrowDown from '../../assets/svg/arrow-down.svg';
+import ArrowDown from "../../assets/svg/arrow-down.svg";
 
-
-const Scroll = function() {
+const Scroll = function () {
   const Container = styled.div`
     width: auto;
     height: auto;
     font-size: 1.2rem;
-    
+
     position: absolute;
     bottom: 0;
     right: 0;
-    
+
     margin-bottom: 3rem;
-    margin-right: -1.5rem;
-    
-    
+    /* margin-right: -1.5rem; */
+
     a {
       color: white;
       font-size: 1rem;
@@ -32,10 +33,8 @@ const Scroll = function() {
       align-items: center;
       gap: 1rem;
       transform: rotate(90deg);
-
     }
 
-    
     a::after {
       content: url(${ArrowDown});
       transform: rotate(-90deg);
@@ -52,24 +51,22 @@ const Scroll = function() {
   );
 };
 
-
-const Details = function() {
+const Details = function () {
   const Container = styled.div`
     margin: auto;
     text-align: center;
   `;
 
   const title = {
-    'color': 'white',
-    'font-size': '2.7rem',
-    'font-weight': '500'
-
+    color: "white",
+    "font-size": "2.7rem",
+    "font-weight": "500",
   };
 
   const subtitle = {
-    'color': 'white',
-    'font-size': '.9rem',
-    'margin-top': '1rem'
+    color: "white",
+    "font-size": ".9rem",
+    "margin-top": "1rem",
   };
 
   return (
@@ -88,34 +85,77 @@ const Details = function() {
 };
 
 export default function Section1(props) {
-  const Container = styled.div`
-  width: 100%;
-  height: 100vh;
-  display: flex;
-
-  .wrapper {
-    height: 100%;
-    flex: 1;
-    padding: 0 2rem;
-    background: url(${Background}) no-repeat;
-    background-size: cover;
-  }
-
-  .container {
-    height: inherit;
+  const Wrapper = styled.div`
+    width: 100%;
+    height: 100vh;
     position: relative;
-    display: flex;
-  }
-`;
+    overflow: hidden;
+
+    .image-wrapper,
+    .container,
+    .owl-carousel,
+    .owl-item,
+    .item {
+      height: 100%;
+    }
+
+    .image-wrapper {
+      width: 100%;
+      .item {
+        height: 100vh;
+        background: url(${Background}) no-repeat;
+        background-size: cover;
+        object-fit: cover;
+      }
+
+      .owl-dots {
+        position: absolute;
+        bottom: 0;
+        margin-bottom: 1rem;
+        margin-left: 2rem;
+      }
+    }
+
+    .container {
+      width: 100%;
+      padding: 0 2rem;
+      position: absolute;
+      top: 0;
+      z-index: 1;
+
+      ._content {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  `;
   return (
-    <Container>
-      <div className="wrapper">
-        <div className="container">
+    <Wrapper>
+      <div className="image-wrapper">
+        <OwlCarousel
+          className="owl-theme"
+          items={1}
+          loop
+          dots
+          autoplay
+          smartSpeed={250}
+          animateIn="flipInX"
+        >
+          <div className="item"></div>
+          <div className="item"></div>
+          <div className="item"></div>
+        </OwlCarousel>
+      </div>
+      <div className="container">
+        <div className="_content">
           <NavBar></NavBar>
           <Details></Details>
           <Scroll></Scroll>
         </div>
       </div>
-    </Container>
+    </Wrapper>
   );
 }
