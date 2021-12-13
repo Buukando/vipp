@@ -142,7 +142,6 @@ export default function Section1(props) {
           dots
           autoplay
           smartSpeed={250}
-          animateIn="flipInX"
         >
           <div className="item"></div>
           <div className="item"></div>
