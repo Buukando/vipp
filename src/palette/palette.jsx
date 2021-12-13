@@ -3,7 +3,8 @@
 const colorPalette = {
     backgrounds: {
         secondaryColor: '#415954',
-        white: '#fff'
+        white: '#fff',
+        gray: '#F2F2F2'
     }
 }
 
