@@ -11,15 +11,14 @@ export default function Section8(props) {
   const colours = Palette();
 
   const Container = styled.section`
-
-  * {
+    * {
       a {
+        color: black;
+        &:visited {
           color: black;
-          &:visited {
-              color: black;
-          }
+        }
       }
-  }
+    }
     width: 100%;
     height: 80vh;
 
@@ -221,16 +220,16 @@ export default function Section8(props) {
             <div className="find-us">
               <span>Find us on</span>
               <span className="social-icons">
-                <a href="">
+                <a href="#">
                   <i class="fab fa-instagram"></i>
                 </a>
-                <a href="">
+                <a href="#">
                   <i class="fab fa-facebook-f"></i>
                 </a>
-                <a href="">
+                <a href="#">
                   <i class="fab fa-twitter"></i>
                 </a>
-                <a href="">
+                <a href="#">
                   <i class="fab fa-youtube"></i>
                 </a>
               </span>
