@@ -25,10 +25,11 @@ export default function Navbar(props) {
     padding: 1.1rem 0;
     border-bottom: 2px solid white;
     position: absolute;
+    top: 0;
 
     header {
+      width: 100%;
       display: flex;
-      align-items: center;
       justify-content: space-between;
     }
 
@@ -42,9 +43,9 @@ export default function Navbar(props) {
         <span className="logo">
           <img src={Logo} alt="" />
         </span>
-        <div className="container_recomendation">
+        <nav className="container_recomendation">
           <MainButton configs={btnConfig}></MainButton>
-        </div>
+        </nav>
       </header>
     </NavContainer>
   );
