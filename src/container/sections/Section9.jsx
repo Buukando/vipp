@@ -123,7 +123,7 @@ export default function Section8(props) {
         <div className="first-content">
           <header>
             <span>
-              <img src={Logo} width="100" />
+              <img src={Logo} width="100" alt="logo"/>
             </span>
           </header>
           <main>
@@ -131,54 +131,54 @@ export default function Section8(props) {
               <div className="first-list">
                 <ul>
                   <li>
-                    <a href="#">The company</a>
+                    <a href="#/">The company</a>
                   </li>
                   <li>
-                    <a href="#">About</a>
+                    <a href="#/">About</a>
                   </li>
                   <li>
-                    <a href="#">Stories</a>
+                    <a href="#/">Stories</a>
                   </li>
                   <li>
-                    <a href="#">Press</a>
+                    <a href="#/">Press</a>
                   </li>
                   <li>
-                    <a href="#">Reservations</a>
+                    <a href="#/">Reservations</a>
                   </li>
                 </ul>
               </div>
               <div className="second-list">
                 <ul>
                   <li>
-                    <a href="#">Legal</a>
+                    <a href="#/">Legal</a>
                   </li>
                   <li>
-                    <a href="#">Legal Notice</a>
+                    <a href="#/">Legal Notice</a>
                   </li>
                   <li>
-                    <a href="#">Work With Us</a>
+                    <a href="#/">Work With Us</a>
                   </li>
                   <li>
-                    <a href="#">Cancel reservation</a>
+                    <a href="#/">Cancel reservation</a>
                   </li>
                   <li>
-                    <a href="#">Lost and Found</a>
+                    <a href="#/">Lost and Found</a>
                   </li>
                 </ul>
               </div>
               <div className="thirt-list">
                 <ul>
                   <li>
-                    <a href="#">Support</a>
+                    <a href="#/">Support</a>
                   </li>
                   <li>
-                    <a href="#">FAQ</a>
+                    <a href="#/">FAQ</a>
                   </li>
                   <li>
-                    <a href="#">Reservations</a>
+                    <a href="#/">Reservations</a>
                   </li>
                   <li>
-                    <a href="#">info@vipp.com</a>
+                    <a href="#/">info@vipp.com</a>
                   </li>
                   <li>
                     <a href="tel:+1449398999">+1449 398 999</a>
@@ -202,13 +202,13 @@ export default function Section8(props) {
         <div className="footer">
           <div className="footer-content">
             <div className="footer-links">
-              <a href="#">
+              <a href="#/">
                 <span>Terms and Conditions</span>
               </a>
-              <a href="#">
+              <a href="#/">
                 <span>Privacy Policy</span>
               </a>
-              <a href="#">
+              <a href="#/">
                 <span>Trademark and Copyright</span>
               </a>
             </div>
@@ -220,16 +220,16 @@ export default function Section8(props) {
             <div className="find-us">
               <span>Find us on</span>
               <span className="social-icons">
-                <a href="#">
+                <a href="#/">
                   <i class="fab fa-instagram"></i>
                 </a>
-                <a href="#">
+                <a href="#/">
                   <i class="fab fa-facebook-f"></i>
                 </a>
-                <a href="#">
+                <a href="#/">
                   <i class="fab fa-twitter"></i>
                 </a>
-                <a href="#">
+                <a href="#/">
                   <i class="fab fa-youtube"></i>
                 </a>
               </span>
