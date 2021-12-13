@@ -35,8 +35,12 @@ function Details() {
       align-items: center;
       gap: 2rem;
 
-      a:visited {
-        color: white;
+      .price {
+        color: #fff;
+
+        &:visited {
+          color: #fff;
+        }
       }
 
       .tour-button {
@@ -74,7 +78,7 @@ function Details() {
         </main>
         <footer>
           <button className="tour-button">Take a Tour</button>
-          <a href="#/" target="_blank" className="price">See pricing</a>
+          <a href="#/" className="price">See pricing</a>
         </footer>
       </div>
     </Container>
