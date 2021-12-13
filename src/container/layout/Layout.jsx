@@ -5,6 +5,8 @@ import Section4 from '../sections/Section4';
 import Section5 from '../sections/Section5';
 import Section6 from '../sections/Section6';
 import Section7 from '../sections/Section7';
+import Section8 from '../sections/Section8';
+import Section9 from '../sections/Section9';
 
 
 export default function Layout(props) {
@@ -16,7 +18,9 @@ export default function Layout(props) {
             <Section4></Section4>
             <Section5></Section5>
             <Section6></Section6>
-            <Section7></Section7>       
+            <Section7></Section7>  
+            <Section8></Section8>     
+            <Section9></Section9>     
         </div>
     )
 }

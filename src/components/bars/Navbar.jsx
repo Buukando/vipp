@@ -13,7 +13,7 @@ export default function Navbar(props) {
   const colors = Palette();
   
   const btnConfig = {
-    text: "Make a reservation navbar",
+    text: "Make a reservation",
     padding: ".7rem 1.5rem",
     color: "white",
     bgColor: colors.backgrounds.secondaryColor,
@@ -28,12 +28,12 @@ export default function Navbar(props) {
 
     header {
       display: flex;
+      align-items: center;
       justify-content: space-between;
     }
 
     .logo img {
-      width: auto;
-      height: 100%;
+      width: 5rem;
     }
   `;
   return (

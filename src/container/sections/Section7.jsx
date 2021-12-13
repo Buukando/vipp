@@ -4,52 +4,54 @@ import styled from "styled-components";
 // Assets
 import Kitchen from "../../assets/img/Section7/kitchen.png";
 
-
 // Code
 function Details() {
   const Container = styled.div`
-
-  .details {
+    .details {
       display: flex;
       flex-direction: column;
       gap: 5rem;
 
       color: white;
-  }
+    }
 
-  .header-container {
+    .header-container {
       display: flex;
       flex-direction: column;
       gap: 1rem;
 
       .litle-title {
-          font-size: .8rem;
-          font-weight: 300;
+        font-size: 0.8rem;
+        font-weight: 300;
       }
 
       .title {
-          font-size: 3rem;
+        font-size: 3rem;
       }
-  }
+    }
 
-  footer {
+    footer {
       display: flex;
       align-items: center;
       gap: 2rem;
 
-      a:visited {
-          color: white;
+      .price {
+        color: #fff;
+
+        &:visited {
+          color: #fff;
+        }
       }
 
-    .tour-button {
-        padding: .8rem 2rem;
+      .tour-button {
+        padding: 0.8rem 2rem;
         border: 1.5px solid white;
         border-radius: 3rem;
         background: transparent;
         color: white;
+        cursor: pointer;
+      }
     }
-
-  }
   `;
 
   return (
@@ -76,7 +78,7 @@ function Details() {
         </main>
         <footer>
           <button className="tour-button">Take a Tour</button>
-          {/* <a href="" target="_blank" className="price">See pricing</a> */}
+          <a href="#/" className="price">See pricing</a>
         </footer>
       </div>
     </Container>
@@ -100,14 +102,13 @@ export default function Section7() {
       justify-content: end;
 
       padding: 0rem 15rem;
-
     }
   `;
 
   return (
     <Container>
       <div className="image-container">
-          <Details></Details>
+        <Details></Details>
       </div>
     </Container>
   );
