@@ -45,6 +45,7 @@ function Details() {
         border-radius: 3rem;
         background: transparent;
         color: white;
+        cursor: pointer;
       }
     }
   `;
@@ -73,7 +74,7 @@ function Details() {
         </main>
         <footer>
           <button className="tour-button">Take a Tour</button>
-          {/* <a href="" target="_blank" className="price">See pricing</a> */}
+          <a href="#" target="_blank" className="price">See pricing</a>
         </footer>
       </div>
     </Container>
