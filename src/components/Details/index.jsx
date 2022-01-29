@@ -4,13 +4,9 @@ import MainButton from "../buttons/MainButton";
 
 export default function Details(props) {
 
-  const { titleSize, showReadMore, configForButtons } = props;
+  const { titleSize, showReadMore, configForButtons, title } = props;
 
   const { first, second } = configForButtons;
-
-  
-  console.log(first)
-  console.log(second)
 
   const Container = styled.div`
     .container-details {
@@ -39,7 +35,7 @@ export default function Details(props) {
       <div className="container-details">
         <div className="title">
           <p>About the</p>
-          <p>Vipp Hotel</p>
+          <p>{title}</p>
         </div>
         <div className="description">
           <span>

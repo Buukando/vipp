@@ -3,7 +3,8 @@ import styled from "styled-components";
 import Details from "../../components/Details/index";
 import Palette from "../../palette/palette";
 
-import AboutImage from "../../assets/img/Section2/about.jpg";
+import Assets from "../../assets/assets";
+const { section2 } = Assets();
 
 const colours = Palette();
 
@@ -19,27 +20,27 @@ const AboutImageContainer = () => {
 
   return (
     <Container>
-      <img src={AboutImage} alt="" />
+      <img src={section2.aboutImage} alt="" />
     </Container>
   );
 };
 
 export default function Section2(props) {
   const buttonsConfigurations = {
-      first: {
-        text: "Book a Room",
-        padding: ".8rem 1.5rem",
-        color: "white",
-        bgColor: colours.backgrounds.secondaryColor,
-        fontSize: ".8rem",
-      },
-      second: {
-        text: "Read more",
-        padding: ".8rem 1.5rem",
-        color: "black",
-        bgColor: "transparent",
-        fontSize: ".8rem",
-      },
+    first: {
+      text: "Book a Room",
+      padding: ".8rem 1.5rem",
+      color: "white",
+      bgColor: colours.backgrounds.secondaryColor,
+      fontSize: ".8rem",
+    },
+    second: {
+      text: "Read more",
+      padding: ".8rem 1.5rem",
+      color: "black",
+      bgColor: "transparent",
+      fontSize: ".8rem",
+    },
   };
 
   const Container = styled.div`
@@ -62,7 +63,8 @@ export default function Section2(props) {
           titleSize={"3.3rem"}
           showReadMore={true}
           configForButtons={buttonsConfigurations}
-        ></Details>
+          title={"Vipp Hotel"}
+        />
         <AboutImageContainer></AboutImageContainer>
       </div>
     </Container>
