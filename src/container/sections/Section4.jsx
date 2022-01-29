@@ -169,10 +169,7 @@ function Taber() {
 export default function Section4() {
   const Container = styled.section`
     width: 100%;
-    height: 100vh;
-
     display: flex;
-    gap: 2rem;
 
     .details {
       height: auto;
@@ -184,10 +181,7 @@ export default function Section4() {
 
     .image-container {
       width: 50%;
-      height: 100%;
       margin-left: auto;
-      background-size: contain;
-      justify-self: center;
 
       img {
         width: 100%;
