@@ -43,10 +43,6 @@ export default function Section2(props) {
     },
   };
 
-  const dataset = {
-    title: `Vipp Hotel`
-  }
-
   const Container = styled.div`
     height: 100vh;
     display: flex;
