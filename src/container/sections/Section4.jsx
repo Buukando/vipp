@@ -181,11 +181,13 @@ export default function Section4() {
 
     .image-container {
       width: 50%;
+      height: 100%;
       margin-left: auto;
+      display: flex;
 
       img {
-        width: 100%;
         height: 100%;
+        width: 100%;
         object-fit: cover;
       }
     }
