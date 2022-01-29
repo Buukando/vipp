@@ -8,8 +8,12 @@ import "../../../node_modules/owl.carousel/dist/assets/owl.theme.default.min.css
 import NavBar from "../../components/bars/Navbar";
 
 // Assets
-import Background from "../../assets/img/Section1/bed1.png";
+import Assets from "../../assets/assets";
 import ArrowDown from "../../assets/svg/arrow-down.svg";
+
+
+const { section1 } = Assets();
+
 
 const Scroll = function () {
   const Container = styled.div`
@@ -103,7 +107,22 @@ export default function Section1(props) {
       width: 100%;
       .item {
         height: 100vh;
-        background: url(${Background}) no-repeat;
+      }
+      
+      .image1 {
+        background: url(${section1.chimney}) no-repeat;
+        background-size: cover;
+        object-fit: cover;
+      }
+      
+      .image2 {
+        background: url(${section1.loft}) no-repeat;
+        background-size: cover;
+        object-fit: cover;
+      }
+
+      .image3 {
+        background: url(${section1.shelter}) no-repeat;
         background-size: cover;
         object-fit: cover;
       }
@@ -142,10 +161,11 @@ export default function Section1(props) {
           dots
           autoplay
           smartSpeed={250}
+          animateOut="fadeOut"
         >
-          <div className="item"></div>
-          <div className="item"></div>
-          <div className="item"></div>
+          <div className="item image1"></div>
+          <div className="item image2"></div>
+          <div className="item image3"></div>
         </OwlCarousel>
       </div>
       <div className="container">

@@ -5,7 +5,8 @@ import styled from "styled-components";
 import MainButton from '../../components/buttons/MainButton';
 
 // Assets
-import Background from '../../assets/img/Section4/four.jpg'
+import Assets from "../../assets/assets";
+const { section4 } = Assets();
 
 
 export default function Section5() {
@@ -13,7 +14,7 @@ export default function Section5() {
   const Container = styled.section`
     width: 100%;
     height: 100vh;
-    background: url(${Background}) no-repeat center center;
+    background: url(${section4.four}) no-repeat center center;
     background-size: cover;
     object-fit: cover;
 

@@ -6,11 +6,10 @@ import PriceCards from "../../components/cards/PriceCards";
 import Palette from "../../palette/palette";
 
 // Assets
-import Loft from "../../assets/img/Section6/loft.jpg";
-import Shelter from "../../assets/img/Section6/shelter2.png";
+import Assets from "../../assets/assets";
 
 // Code
-
+const { section5 } = Assets();
 const colours = Palette();
 
 export default function Section6(props) {
@@ -31,7 +30,7 @@ export default function Section6(props) {
       price: "$ 1.000/night",
       description:
         "Perched atop the old printing factory from 1910 \n in Copenhogen's islands Brygge area.",
-      image: Loft,
+      image: section5.loft,
       bgColor: "#f3f3f3",
     },
     card2: {
@@ -40,7 +39,7 @@ export default function Section6(props) {
       price: "$ 1.000/night",
       description:
         "Perched atop the old printing factory from 1910 \n in Copenhogen's islands Brygge area.",
-      image: Shelter,
+      image: section5.shelter,
       bgColor: "#1d1d1d",
       color: "white",
     },
@@ -50,7 +49,7 @@ export default function Section6(props) {
       price: "$ 1.000/night",
       description:
         "Perched atop the old printing factory from 1910 \n in Copenhogen's islands Brygge area.",
-      image: Loft,
+      image: section5.loft,
       bgColor: "#f3f3f3",
     },
   };
@@ -68,18 +67,9 @@ export default function Section6(props) {
   return (
     <Container>
       <div className="wrapper">
-        <PriceCards
-          contentForCard={card1}
-          configsForButtons={btnConfig}
-        ></PriceCards>
-        <PriceCards
-          contentForCard={card2}
-          configsForButtons={btnConfig}
-        ></PriceCards>
-        <PriceCards
-          contentForCard={card3}
-          configsForButtons={btnConfig}
-        ></PriceCards>
+        <PriceCards contentForCard={card1} configsForButtons={btnConfig} />
+        <PriceCards contentForCard={card2} configsForButtons={btnConfig} />
+        <PriceCards contentForCard={card3} configsForButtons={btnConfig} />
       </div>
     </Container>
   );

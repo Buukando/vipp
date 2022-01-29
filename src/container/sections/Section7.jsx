@@ -2,9 +2,11 @@
 import styled from "styled-components";
 
 // Assets
-import Kitchen from "../../assets/img/Section7/kitchen.png";
+import Assets from "../../assets/assets";
 
 // Code
+const { section6 } = Assets();
+
 function Details() {
   const Container = styled.div`
     .details {
@@ -93,7 +95,7 @@ export default function Section7() {
     .image-container {
       width: 100%;
       height: 100%;
-      background: url(${Kitchen}) no-repeat left bottom;
+      background: url(${section6.kitchen}) no-repeat left bottom;
       object-fit: cover;
       background-size: cover;
 
