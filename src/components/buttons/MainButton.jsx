@@ -3,8 +3,6 @@ import styled from "styled-components";
 export default function MainButton(props) {
 
   const { padding, color, text, fontSize, bgColor } = props.configs;
-  console.log(padding);
-
 
   const Container = styled.div`
     width: auto;

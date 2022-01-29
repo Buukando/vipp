@@ -3,7 +3,8 @@ import OwlCarousel from "react-owl-carousel";
 import "../../../node_modules/owl.carousel/dist/assets/owl.carousel.css";
 import "../../../node_modules/owl.carousel/dist/assets/owl.theme.default.min.css";
 
-import Image from "../../assets/img/Section1/bed.jpg";
+import Assets from "../../assets/assets";
+const { carousel, drive } = Assets();
 
 export default function Section8(props) {
   const Wrapper = styled.section`
@@ -67,21 +68,11 @@ export default function Section8(props) {
 
         <div className="photo-container">
           <OwlCarousel className="owl-theme" margin={10} dots={false}>
-            <div className="item">
-              <img src={Image} alt="" />
-            </div>
-            <div className="item">
-              <img src={Image} alt="" />
-            </div>
-            <div className="item">
-              <img src={Image} alt="" />
-            </div>
-            <div className="item">
-              <img src={Image} alt="" />
-            </div>
-            <div className="item">
-              <img src={Image} alt="" />
-            </div>
+            {carousel.map((value) => (
+              <div className="item">
+                <img src={`${drive + value}`} alt="" />
+              </div>
+            ))}
           </OwlCarousel>
         </div>
       </div>

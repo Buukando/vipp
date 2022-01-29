@@ -11,8 +11,10 @@ import Details from "../../components/Details/index";
 import Palette from "../../palette/palette";
 
 // Images
-import FourImage from "../../assets/img/Section4/four.jpg";
+import Assets from "../../assets/assets";
+
 const colours = Palette();
+const { section4 } = Assets();
 
 const theme = createTheme({
   props: {
@@ -39,14 +41,15 @@ const buttonsConfigurations = {
   },
 };
 
-function* generateDetails(colours, size, toShow) {
+function* generateDetails(colours, size, toShow, hotelName) {
   yield (
     <Details
       palette={colours}
       titleSize={size}
       showReadMore={toShow}
       configForButtons={buttonsConfigurations}
-    ></Details>
+      title={hotelName}
+    />
   );
   yield (
     <Details
@@ -54,7 +57,8 @@ function* generateDetails(colours, size, toShow) {
       titleSize={size}
       showReadMore={toShow}
       configForButtons={buttonsConfigurations}
-    ></Details>
+      title={hotelName}
+    />
   );
   yield (
     <Details
@@ -62,7 +66,8 @@ function* generateDetails(colours, size, toShow) {
       titleSize={size}
       showReadMore={toShow}
       configForButtons={buttonsConfigurations}
-    ></Details>
+      title={hotelName}
+    />
   );
 }
 
@@ -142,13 +147,13 @@ function Taber() {
         </ThemeProvider>
       </Box>
       <TabPanel value={value} index={0}>
-        {generateDetails(colours, "3rem", false).next().value}
+        {generateDetails(colours, "3rem", false, "Vipp Chimney").next().value}
       </TabPanel>
       <TabPanel value={value} index={1}>
-        {generateDetails(colours, "3rem", false).next().value}
+        {generateDetails(colours, "3rem", false, "Vipp Shelter").next().value}
       </TabPanel>
       <TabPanel value={value} index={2}>
-        {generateDetails(colours, "3rem", false).next().value}
+        {generateDetails(colours, "3rem", false, "Vipp Loft").next().value}
       </TabPanel>
     </Container>
   );
@@ -189,7 +194,7 @@ export default function Section4() {
         <Taber></Taber>
       </div>
       <div className="image-container">
-        <img src={FourImage} alt="just" />
+        <img src={section4.four} alt="just" />
       </div>
     </Container>
   );

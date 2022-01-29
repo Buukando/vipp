@@ -9,8 +9,7 @@ import MainButton from "../../components/buttons/MainButton";
 // Code
 export default function PriceCards(props) {
   const { contentForCard, configsForButtons } = props;
-  const { location, title, price, description, image, bgColor, color } =
-    contentForCard;
+  const { location, title, price, description, image, bgColor, color } = contentForCard;
 
   const Container = styled.div`
     flex: 1;
@@ -65,6 +64,10 @@ export default function PriceCards(props) {
       text-align: center;
       gap: 1rem;
     }
+
+    .card_description {
+      padding: 0 2rem;
+    }
   `;
 
   return (
@@ -83,7 +86,7 @@ export default function PriceCards(props) {
             <div>
               <span>{price}</span>
             </div>
-            <div>
+            <div className="card_description">
               <span>{description}</span>
             </div>
             <div>
