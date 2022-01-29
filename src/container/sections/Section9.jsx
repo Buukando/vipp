@@ -54,7 +54,7 @@ export default function Section8(props) {
 
     .newsletter-container {
       .litle-header {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
         margin-bottom: 2rem;
       }
 

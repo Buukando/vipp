@@ -19,7 +19,7 @@ export default function Section6(props) {
     padding: ".6rem 1rem",
     text: "View Room",
     color: backgrounds.white,
-    fontSize: ".9rem",
+    fontSize: "1.2rem",
     bgColor: backgrounds.secondaryColor,
   };
 

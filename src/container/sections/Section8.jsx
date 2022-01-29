@@ -9,14 +9,13 @@ const { carousel, drive } = Assets();
 export default function Section8(props) {
   const Wrapper = styled.section`
     width: 100%;
-    height: 100vh;
+    padding: 15vh 0;
 
     display: flex;
-    align-items: center;
-    justify-content: end;
 
     .container {
       width: 90%;
+      margin-left: auto;
     }
 
     .details {
@@ -49,6 +48,12 @@ export default function Section8(props) {
         }
       }
     }
+
+    .photo-container {
+      .item > img {
+        width: 100%;
+      }
+    }
   `;
 
   return (
@@ -70,7 +75,7 @@ export default function Section8(props) {
           <OwlCarousel className="owl-theme" margin={10} dots={false}>
             {carousel.map((value) => (
               <div className="item">
-                <img src={`${drive + value}`} alt="" />
+                <img src={`${drive + value}`} alt=""/>
               </div>
             ))}
           </OwlCarousel>
