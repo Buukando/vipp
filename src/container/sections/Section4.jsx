@@ -17,6 +17,7 @@ const colours = Palette();
 const { section4 } = Assets();
 
 const theme = createTheme({
+  fontSize: "2rem",
   props: {
     MuiButtonBase: {
       disableRipple: true,
@@ -30,14 +31,14 @@ const buttonsConfigurations = {
     padding: ".8rem 1.5rem",
     color: "white",
     bgColor: colours.backgrounds.secondaryColor,
-    fontSize: ".8rem",
+    fontSize: "1.2rem",
   },
   second: {
     text: "Read more",
     padding: ".8rem 1.5rem",
     color: "black",
     bgColor: "transparent",
-    fontSize: ".8rem",
+    fontSize: "1.2rem",
   },
 };
 
@@ -83,7 +84,7 @@ function TabPanel(props) {
       {...other}
     >
       {value === index && (
-        <Box sx={{ p: 3 }}>
+        <Box sx={{ p: 4 }}>
           <Typography>{children}</Typography>
         </Box>
       )}
@@ -106,20 +107,26 @@ function a11yProps(index) {
 
 function Taber() {
   const Container = styled.div`
+
+  .description {
+    font-size: 1.6rem;
+  }
+
     .MuiBox-root {
       display: inline-block;
       border: none;
     }
-
+    
     .MuiTabs-scroller {
       text-transform: capitalize;
     }
-
+    
     .MuiTabs-indicator {
       background: #47645f;
     }
-
+    
     .MuiButtonBase-root {
+      font-size: 1.4rem;
       color: #47645f !important;
       text-transform: none;
     }
@@ -147,13 +154,13 @@ function Taber() {
         </ThemeProvider>
       </Box>
       <TabPanel value={value} index={0}>
-        {generateDetails(colours, "3rem", false, "Vipp Chimney").next().value}
+        {generateDetails(colours, "4rem", false, "Vipp Chimney").next().value}
       </TabPanel>
       <TabPanel value={value} index={1}>
-        {generateDetails(colours, "3rem", false, "Vipp Shelter").next().value}
+        {generateDetails(colours, "4rem", false, "Vipp Shelter").next().value}
       </TabPanel>
       <TabPanel value={value} index={2}>
-        {generateDetails(colours, "3rem", false, "Vipp Loft").next().value}
+        {generateDetails(colours, "4rem", false, "Vipp Loft").next().value}
       </TabPanel>
     </Container>
   );
@@ -165,12 +172,12 @@ export default function Section4() {
     height: 100vh;
 
     display: flex;
-    justify-content: space-between;
+    gap: 2rem;
 
     .details {
-      width: 50%;
-      height: 100%;
-      display: flex;
+      height: auto;
+      display: block;
+      margin: auto;
       align-items: center;
       justify-content: center;
     }
@@ -178,6 +185,7 @@ export default function Section4() {
     .image-container {
       width: 50%;
       height: 100%;
+      margin-left: auto;
       background-size: contain;
       justify-self: center;
 

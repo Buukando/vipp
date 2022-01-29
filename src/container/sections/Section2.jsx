@@ -14,7 +14,7 @@ const AboutImageContainer = () => {
 
     img {
       width: auto;
-      height: 40rem;
+      height: 80vh;
     }
   `;
 
@@ -32,19 +32,19 @@ export default function Section2(props) {
       padding: ".8rem 1.5rem",
       color: "white",
       bgColor: colours.backgrounds.secondaryColor,
-      fontSize: ".8rem",
+      fontSize: "1.2rem",
     },
     second: {
       text: "Read more",
       padding: ".8rem 1.5rem",
       color: "black",
       bgColor: "transparent",
-      fontSize: ".8rem",
+      fontSize: "1.2rem",
     },
   };
 
   const Container = styled.div`
-    height: 100vh;
+  padding: 20vh 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -52,7 +52,7 @@ export default function Section2(props) {
     .container {
       display: flex;
       align-items: center;
-      gap: 10rem;
+      gap: 12rem;
     }
   `;
   return (
@@ -60,7 +60,7 @@ export default function Section2(props) {
       <div className="container">
         <Details
           palette={colours}
-          titleSize={"3.3rem"}
+          titleSize={"4rem"}
           showReadMore={true}
           configForButtons={buttonsConfigurations}
           title={"Vipp Hotel"}
