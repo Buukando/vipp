@@ -27,7 +27,7 @@ export default function Section5() {
     color: 'black',
     bgColor: 'white',
     text: 'Look inside Vipp Shelter',
-    fontSize: '1rem'
+    fontSize: '1.2rem'
   }
   return (
     <Container>

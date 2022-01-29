@@ -19,7 +19,6 @@ const Scroll = function () {
   const Container = styled.div`
     width: auto;
     height: auto;
-    font-size: 1.2rem;
 
     position: absolute;
     bottom: 0;
@@ -30,7 +29,7 @@ const Scroll = function () {
 
     a {
       color: white;
-      font-size: 1rem;
+      font-size: 1.4rem;
       background: transparent;
       border: none;
       display: flex;
@@ -59,18 +58,20 @@ const Details = function () {
   const Container = styled.div`
     margin: auto;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
   `;
 
   const title = {
-    color: "white",
-    "font-size": "2.7rem",
+    "color": "white",
+    "font-size": "3.2rem",
     "font-weight": "500",
   };
 
   const subtitle = {
-    color: "white",
-    "font-size": ".9rem",
-    "margin-top": "1rem",
+    "color": "white",
+    "font-size": "1.4rem",
   };
 
   return (
@@ -91,7 +92,6 @@ const Details = function () {
 export default function Section1(props) {
   const Wrapper = styled.div`
     width: 100%;
-    height: 100vh;
     position: relative;
     overflow: hidden;
 

@@ -17,7 +17,7 @@ export default function Navbar(props) {
     padding: ".7rem 1.5rem",
     color: "white",
     bgColor: colors.backgrounds.secondaryColor,
-    fontSize: ".8rem",
+    fontSize: "1.2rem",
   };
 
   const NavContainer = styled.div`
@@ -31,6 +31,11 @@ export default function Navbar(props) {
       width: 100%;
       display: flex;
       justify-content: space-between;
+      align-items: center;
+    }
+
+    span {
+      padding-top: .6rem;
     }
 
     .logo img {

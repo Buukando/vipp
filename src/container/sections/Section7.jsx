@@ -23,7 +23,7 @@ function Details() {
       gap: 1rem;
 
       .litle-title {
-        font-size: 0.8rem;
+        font-size: 1rem;
         font-weight: 300;
       }
 
