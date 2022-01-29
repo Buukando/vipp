@@ -5,14 +5,15 @@ const { section3 } = Assets();
 
 export default function Section3(props) {
   const Container = styled.section`
-  width: 100%;
-    height: 90vh;
+    width: 100%;
+    height: auto;
+    display: flex;
 
     video {
-        max-width: 100%;
-        max-height: 100%;
-        width: 100%;
-        object-fit: cover;
+      flex: 1;
+      max-width: 100%;
+      height: 100%;
+      width: 100%;
     }
   `;
   return (
