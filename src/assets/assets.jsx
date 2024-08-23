@@ -1,18 +1,25 @@
+import chimney from './images/chimney.png'
+import loft from './images/loft.png'
+import shelter from './images/shelter.png'
+import aboutImage from './images/aboutImage.png'
+
+import video from './video/loft.mp4'
+
 export default function Assets() {
 
-    const exportDrive = 'https://drive.google.com/uc?export=view&id=';
+    const exportDrive = 'https://drive.google.com/uc?export=view&id=18f37ONYW8tzUWKZ6D39fUT6XD-ANJfWg';
 
     return {
         section1: {
-            chimney: `${exportDrive}1MmdqBMs0-eNieMX8_dpjNXj3SXoLo0c2`,
-            loft: `${exportDrive}1ZpboWYRucsH6x0aV689P-U9r2BtftGe2`,
-            shelter: `${exportDrive}1c0UgFyjVZNmbBCI0fXTE2PbW9iAUXFd1`
+            chimney: chimney,
+            loft: loft,
+            shelter: shelter
         },
         section2: {
-            aboutImage: `${exportDrive}1HkUAqV9sysn7Oav8g5i2sk1O7QyKbb1P`
+            aboutImage: aboutImage
         },
         section3: {
-            video: `${exportDrive}18f37ONYW8tzUWKZ6D39fUT6XD-ANJfWg`
+            video: video
         },
         section4: {
             four: `${exportDrive}12EgixtpgAc1KDJMw5tesA1NYpBFNWCj7`
