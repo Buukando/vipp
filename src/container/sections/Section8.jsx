@@ -4,7 +4,7 @@ import "../../../node_modules/owl.carousel/dist/assets/owl.carousel.css";
 import "../../../node_modules/owl.carousel/dist/assets/owl.theme.default.min.css";
 
 import Assets from "../../assets/assets";
-const { carousel, drive } = Assets();
+const { carousel } = Assets();
 
 export default function Section8() {
   const Wrapper = styled.section`

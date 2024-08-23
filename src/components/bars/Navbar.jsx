@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 // Components
 import MainButton from "../buttons/MainButton";
-import Palette from "../../palette/palette";
+import Palette from "../../styles/palette/palette";
 
 //Assets
 import Logo from "../../assets/svg/logo.svg";

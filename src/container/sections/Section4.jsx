@@ -8,7 +8,7 @@ import Box from "@mui/material/Box";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 
 import Details from "../../components/Details/index";
-import Palette from "../../palette/palette";
+import Palette from "../../styles/palette/palette";
 
 // Images
 import Assets from "../../assets/assets";
