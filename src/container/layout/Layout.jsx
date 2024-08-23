@@ -9,7 +9,7 @@ import Section8 from '../sections/Section8';
 import Section9 from '../sections/Section9';
 
 
-export default function Layout(props) {
+export default function Layout() {
     return(
         <div className="layout">
             <Section1></Section1>

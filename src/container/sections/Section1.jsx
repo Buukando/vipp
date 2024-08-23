@@ -2,7 +2,7 @@
 import styled from "styled-components";
 import OwlCarousel from "react-owl-carousel";
 import "../../../node_modules/owl.carousel/dist/assets/owl.carousel.css";
-import "../../../node_modules/owl.carousel/dist/assets/owl.theme.default.min.css";
+import "../../../node_modules/owl.carousel/dist/assets/owl.theme.default.css";
 
 // Components
 import NavBar from "../../components/bars/Navbar";
@@ -11,9 +11,7 @@ import NavBar from "../../components/bars/Navbar";
 import Assets from "../../assets/assets";
 import ArrowDown from "../../assets/svg/arrow-down.svg";
 
-
 const { section1 } = Assets();
-
 
 const Scroll = function () {
   const Container = styled.div`
@@ -64,13 +62,13 @@ const Details = function () {
   `;
 
   const title = {
-    "color": "white",
+    color: "white",
     "font-size": "3.2rem",
     "font-weight": "500",
   };
 
   const subtitle = {
-    "color": "white",
+    color: "white",
     "font-size": "1.4rem",
   };
 
@@ -89,7 +87,7 @@ const Details = function () {
   );
 };
 
-export default function Section1(props) {
+export default function Section1() {
   const Wrapper = styled.div`
     width: 100%;
     position: relative;
@@ -108,13 +106,13 @@ export default function Section1(props) {
       .item {
         height: 100vh;
       }
-      
+
       .image1 {
         background: url(${section1.chimney}) no-repeat;
         background-size: cover;
         object-fit: cover;
       }
-      
+
       .image2 {
         background: url(${section1.loft}) no-repeat;
         background-size: cover;

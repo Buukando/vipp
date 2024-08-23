@@ -6,7 +6,7 @@ import "../../../node_modules/owl.carousel/dist/assets/owl.theme.default.min.css
 import Assets from "../../assets/assets";
 const { carousel, drive } = Assets();
 
-export default function Section8(props) {
+export default function Section8() {
   const Wrapper = styled.section`
     width: 100%;
     padding: 15vh 0;
@@ -66,15 +66,15 @@ export default function Section8(props) {
           </div>
           <div className="go-instagram">
             <a href="#/">
-              Go to account <i class="fas fa-arrow-right"></i>
+              Go to account <i className="fas fa-arrow-right"></i>
             </a>
           </div>
         </div>
 
         <div className="photo-container">
           <OwlCarousel className="owl-theme" margin={10} dots={false}>
-            {carousel.map((value) => (
-              <div className="item">
+            {carousel.map((value, index) => (
+              <div className="item" key={index}>
                 <img src={`${drive + value}`} alt=""/>
               </div>
             ))}

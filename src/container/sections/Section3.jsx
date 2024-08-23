@@ -3,7 +3,7 @@ import styled from "styled-components";
 import Assets from "../../assets/assets";
 const { section3 } = Assets();
 
-export default function Section3(props) {
+export default function Section3() {
   const Container = styled.section`
     width: 100%;
     height: auto;

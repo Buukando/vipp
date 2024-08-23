@@ -12,7 +12,7 @@ import Assets from "../../assets/assets";
 const { section5 } = Assets();
 const colours = Palette();
 
-export default function Section6(props) {
+export default function Section6() {
   const { backgrounds } = colours;
 
   const btnConfig = {

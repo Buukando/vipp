@@ -8,7 +8,7 @@ import Palette from "../../palette/palette";
 //Assets
 import Logo from "../../assets/svg/logo.svg";
 
-export default function Navbar(props) {
+export default function Navbar() {
 
   const colors = Palette();
   

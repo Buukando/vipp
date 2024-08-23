@@ -9,6 +9,6 @@ const colorPalette = {
 }
 
 
-export default function Palette(props) {
+export default function Palette() {
     return colorPalette;
 }

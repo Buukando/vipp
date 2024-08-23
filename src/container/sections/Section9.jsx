@@ -7,7 +7,7 @@ import Palette from "../../palette/palette";
 // Assets
 import Logo from "../../assets/svg/logo-black.svg";
 
-export default function Section8(props) {
+export default function Section8() {
   const colours = Palette();
 
   const Container = styled.section`
@@ -221,16 +221,16 @@ export default function Section8(props) {
               <span>Find us on</span>
               <span className="social-icons">
                 <a href="#/">
-                  <i class="fab fa-instagram"></i>
+                  <i className="fab fa-instagram"></i>
                 </a>
                 <a href="#/">
-                  <i class="fab fa-facebook-f"></i>
+                  <i className="fab fa-facebook-f"></i>
                 </a>
                 <a href="#/">
-                  <i class="fab fa-twitter"></i>
+                  <i className="fab fa-twitter"></i>
                 </a>
                 <a href="#/">
-                  <i class="fab fa-youtube"></i>
+                  <i className="fab fa-youtube"></i>
                 </a>
               </span>
             </div>
