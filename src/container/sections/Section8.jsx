@@ -75,7 +75,7 @@ export default function Section8() {
           <OwlCarousel className="owl-theme" margin={10} dots={false}>
             {carousel.map((value, index) => (
               <div className="item" key={index}>
-                <img src={`${drive + value}`} alt=""/>
+                <img src={value} alt=""/>
               </div>
             ))}
           </OwlCarousel>

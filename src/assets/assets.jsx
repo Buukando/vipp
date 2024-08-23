@@ -1,7 +1,21 @@
 import chimney from './images/chimney.png'
 import loft from './images/loft.png'
+import loftDraw from './images/loft_draw.jpeg'
 import shelter from './images/shelter.png'
+import shelterDraw from './images/shelter_draw.png'
 import aboutImage from './images/aboutImage.png'
+import four from './images/four.jpg'
+import kitchen from './images/kitchen.png'
+
+
+import image1 from './images/carousel/1.jpg'
+import image2 from './images/carousel/2.jpg'
+import image3 from './images/carousel/3.jpg'
+import image4 from './images/carousel/4.jpg'
+import image5 from './images/carousel/5.jpg'
+import image6 from './images/carousel/6.jpg'
+import image7 from './images/carousel/7.jpg'
+import image8 from './images/carousel/8.jpg'
 
 import video from './video/loft.mp4'
 
@@ -22,24 +36,24 @@ export default function Assets() {
             video: video
         },
         section4: {
-            four: `${exportDrive}12EgixtpgAc1KDJMw5tesA1NYpBFNWCj7`
+            four: four,
         },
         section5: {
-            loft: `${exportDrive}1xqihnBT_OHk29MeRERoAtlSDoy7DU_Ay`,
-            shelter: `${exportDrive}1wP9IlwNg7DXpaVnqUKWpc46xDSq4D3fS`,
+            loft: loftDraw,
+            shelter: shelterDraw
         },
         section6: {
-            kitchen: `${exportDrive}1SyIUT_WNN7GhYkBGeh2IeGNCtwA1K2LD`
+            kitchen: kitchen
         },
         carousel: [
-            "1jcKlzbsEqT-fAV562qKdZVLsl-fRcNo7",
-            "1JBTcrZZO9hRnLiHGWPtDszVXnmcI-Q5T",
-            "1hSstssw1IGxM2D6mvra03QkLtCn8cxdy",
-            "1RpLV70nARBNV-nRILY0qy7O42YR6dXjD",
-            "1IAwO7u0DzyjFK5WildpV0UjFPfnJ70fD",
-            "1uVdH4X2MdMEd7uusR4ot5yIwemhl3A2f",
-            "1NF8twmbv2txjF97L2aITzK4dunwESw7X",
-            "1bH3H69maTt9XU_2Z45Jj_SI5d361C0ZB"
+            image1,
+            image2,
+            image3,
+            image4,
+            image5,
+            image6,
+            image7,
+            image8
         ],
         drive: exportDrive
     }
