@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 // Components
 import PriceCards from "../../components/cards/PriceCards";
-import Palette from "../../palette/palette";
+import Palette from "../../styles/palette/palette";
 
 // Assets
 import Assets from "../../assets/assets";

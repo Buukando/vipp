@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 import MainButton from "../../components/buttons/MainButton";
 
-import Palette from "../../palette/palette";
+import Palette from "../../styles/palette/palette";
 
 // Assets
 import Logo from "../../assets/svg/logo-black.svg";
@@ -213,7 +213,7 @@ export default function Section8() {
               </a>
             </div>
             <div className="copy">
-              <span>&copy;2021 Vipp. All rights reserved</span>
+              <span>&copy;2024 Vipp. All rights reserved</span>
             </div>
           </div>
           <div>

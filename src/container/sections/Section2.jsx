@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 import Details from "../../components/Details/index";
-import Palette from "../../palette/palette";
+import Palette from "../../styles/palette/palette";
 
 import Assets from "../../assets/assets";
 const { section2 } = Assets();
